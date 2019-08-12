@@ -1,3 +1,5 @@
+from producto import Productos
+
 
 class Carrito:
     #Constructor

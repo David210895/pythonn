@@ -40,10 +40,13 @@ def LlenarCarrito():
         product = input("Elija un producto: ")
         for i in lstProductos:
             if i.codigo == product:
-                print(i)        
+                #print(i)        
                 cantidad = int(input("Ingrese la cantidad: "))
                 i.verificarStock(cantidad)
+                print("-----------------------------------------------")
+                print("Lo que queda es: ")
                 print(i) 
+                print("-----------------------------------------------")
                 carro.AgregarCarrito(product)
                 print("En mi canasta hay: ",carro)
                 incial=True

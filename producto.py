@@ -15,7 +15,7 @@ class Productos:
         return tmp
     #yo
     def verificarStock(self, cantidad):
-        if cantidad < self.stock:
+        if cantidad <= self.stock:
             self.stock -= cantidad
         else:
             print("Stock insuficiente...")
